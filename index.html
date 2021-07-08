@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+<body>
+    <button onclick="clicou()">Clique aqui</button>
+    <h3 id="agr"></h3>
+    <button onclick="redirecionar()">Clique aqui também</button>
+
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)" >Olá, tudo bem?</p> <!--colocando o this ele se refere á ele mesmo para função, não precisando de um id.-->
+    <p onmouseover="trocar(this)" onmouseout="voltar(this)" >Olá, tudo bem?</p> 
+
+    <!--Com o onchange podemos coletar o valor que o usuário insere-->
+    <select onchange="coleta(this)">
+        <option value="1"> Valor 1</option>
+        <option value="2"> Valor 2</option>
+        <option value="3"> Valor 3</option>
+    </select>
+</body>
+</html>
